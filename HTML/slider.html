@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="/CSS/sliderStyle.css">
+    <script src="/JS/jquery.js"></script>
+    <script src="/JS/jquery.dataTables.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section class="header-1">
+            <img src="/IMAGES/logo.jpg" class="Logo">
+            <input type="search" id="input-search" placeholder="Buscar..." class="input-search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="content-search">
+                <div class="content-table">
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <td><a>Actividades</a></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="/HTML/slider.html">Slider en JAVA</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/HTML/fondo.html">Fondo a elegir</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/HTML/calculadora.html">Calculadora</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a class="fa-solid fa-house" id="home" href="/index.html"></a>
+        </section>
+        <section class="header-2">
+            <div>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="/HTML/slider.html">Slider JAVA</a></li>
+                        <li><a href="/HTML/fondo.html">Fondo</a></li>
+                        <li><a href="/HTML/calculadora.html">Calculdora</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div class="img-slider">
+                <div class="slide active">
+                    <img src="/IMAGES/image1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/IMAGES/image2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/IMAGES/image3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/IMAGES/image4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/IMAGES/image5.jpeg" alt="">
+                </div>
+                <div class="navigation">
+                    <div class="btn active"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+<script src="/JS/search.js"></script>
+<script src="/JS/slider.js"></script>

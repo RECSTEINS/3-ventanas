@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/CSS/calculadoraStyles.css">
+    <script src="/JS/jquery.js"></script>
+    <script src="/JS/jquery.dataTables.min.js"></script>
+    <script src="https://kit.fontawesome.com/1ac30cc253.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section class="header-1">
+            <img src="/IMAGES/logo.jpg" class="Logo">
+            <input type="search" id="input-search" placeholder="Buscar..." class="input-search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="content-search">
+                <div class="content-table">
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <td><a>Actividades</a></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="/HTML/slider.html">Slider en JAVA</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/HTML/fondo.html">Fondo a elegir</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/HTML/calculadora.html">Calculadora</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a class="fa-solid fa-house" id="home" href="/index.html"></a>
+        </section>
+        <section class="header-2">
+            <div>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="/HTML/slider.html">Slider JAVA</a></li>
+                        <li><a href="/HTML/fondo.html">Fondo</a></li>
+                        <li><a href="/HTML/calculadora.html">Calculdora</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="container">
+            <div class="calculator dark">
+                <div class="theme-toggler active">
+                    <i class="toggler-icon"></i>
+                </div>
+                <div class="display-screen">
+                    <div id="display"></div>
+                </div>
+                <div class="buttons">
+                    <table>
+                        <tr>
+                            <td><button class="btn-operator" id="clear">C</button></td>
+                            <td><button class="btn-operator" id="/">&divide;</button></td>
+                            <td><button class="btn-operator" id="*">&times;</button></td>
+                            <td><button class="btn-operator" id="backspace">D</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn-number" id="7">7</button></td>
+                            <td><button class="btn-number" id="8">8</button></td>
+                            <td><button class="btn-number" id="9">9</button></td>
+                            <td><button class="btn-operator" id="-">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn-number" id="4">4</button></td>
+                            <td><button class="btn-number" id="5">5</button></td>
+                            <td><button class="btn-number" id="6">6</button></td>
+                            <td><button class="btn-operator" id="+">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn-number" id="1">1</button></td>
+                            <td><button class="btn-number" id="2">2</button></td>
+                            <td><button class="btn-number" id="3">3</button></td>
+                            <td rowspan="2"><button class="btn-equal" id="equal">=</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn-operator" id="(">(</button></td>
+                            <td><button class="btn-number" id="0">0</button></td>
+                            <td><button class="btn-operator" id=")">)</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<script src="/JS/search.js"></script>
+<script src="/JS/calculator.js"></script>
